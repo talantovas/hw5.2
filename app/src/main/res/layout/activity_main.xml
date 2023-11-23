@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/green"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="347dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="20dp"
+
+        android:hint="Username"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:padding="22dp"
+        android:background="@drawable/oval1"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="347dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/editTextUsername"
+        android:hint="Email"
+
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:padding="22dp"
+        android:background="@drawable/oval1"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="149dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="347dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/editTextEmail"
+        android:background="@drawable/oval1"
+        android:textColorHint="@color/white"
+        android:padding="22dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="216dp"
+        />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="350dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:text="NEXT"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/strelka1"
+        app:layout_constraintBottom_toBottomOf="@id/buttonNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/owl"
+        app:layout_constraintEnd_toEndOf="@id/buttonNext"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@id/buttonNext"
+        app:layout_constraintTop_toBottomOf="@id/buttonNext" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trivia"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
